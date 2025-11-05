@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wise Ember — Design with Intent</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Wise Ember creates design, digital products, and systems that inspire connection. Shop our Amazon Merch or contact us for collaborations." />
+</head>
+<body>
+  <header class="site-hero">
+    <div class="container">
+      <h1>Wise Ember</h1>
+      <p class="tagline">Design with intent. Creative and strategic design, digital products, and systems that inspire connection.</p>
+      <p><a class="cta" href="#shop">Shop on Amazon</a> <a class="cta outline" href="#contact">Contact</a></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Wise Ember</h2>
+      <p>Wise Ember combines visual storytelling with systems thinking. I create original designs, product concepts, and digital experiences for eCommerce and brands. Tools: Procreate, Illustrator, Canva.</p>
+    </section>
+
+    <section id="showcase" class="card">
+      <h2>Featured Designs</h2>
+      <div class="grid">
+        <!-- Replace these image links later with your own product mockups -->
+        <a class="item" href="https://www.amazon.com/dp/EXAMPLE1" target="_blank" rel="noopener">
+          <img src="https://via.placeholder.com/300x300.png?text=Design+1" alt="Design 1" />
+          <div class="caption">Hope Ember Tee</div>
+        </a>
+        <a class="item" href="https://www.amazon.com/dp/EXAMPLE2" target="_blank" rel="noopener">
+          <img src="https://via.placeholder.com/300x300.png?text=Design+2" alt="Design 2" />
+          <div class="caption">Botanical Line Tee</div>
+        </a>
+      </div>
+      <p class="note">Each item links to our Amazon Merch listing for purchase.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:wiseember@gmail.com">wiseember@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Wise Ember. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
