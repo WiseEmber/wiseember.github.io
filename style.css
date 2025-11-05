@@ -45,18 +45,11 @@ body {
   margin-bottom: 20px;
 }
 
-.about-intro {
-  background: white;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  margin-bottom: 20px;
+.about-text {
   font-size: 0.95em;
-}
-
-.about-intro h2 {
-  color: #d45a2a;
-  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6em;
 }
 
 .hero-image {
@@ -172,3 +165,4 @@ footer {
     margin-top: 20px;
   }
 }
+
