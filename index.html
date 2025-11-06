@@ -85,4 +85,111 @@ a {
 .btn-primary:hover {
   background-color: #b7470e;
   transform: translateY(-2px);
-  box
+  box-shadow: 0 4px 10px rgba(216, 90, 26, 0.2);
+}
+
+.btn-secondary {
+  border: 2px solid #d85a1a;
+  color: #d85a1a;
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #d85a1a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ---------- ABOUT ---------- */
+.about {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  animation: fadeInUp 1.5s ease both;
+}
+
+/* ---------- PRODUCT SECTIONS ---------- */
+.merch, .books {
+  background: #fff;
+  border-radius: 14px;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  animation: fadeInUp 1.5s ease both;
+}
+
+.merch h3, .books h3 {
+  color: #d85a1a;
+  margin-bottom: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.product-card p {
+  margin: 0.75rem 0;
+  font-weight: 500;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .logo {
+    width: 240px;
+  }
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+}
