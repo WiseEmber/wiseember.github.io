@@ -4,15 +4,14 @@ body {
   color: #222;
   background-color: #fbfaf8;
   background-image: url('https://www.transparenttextures.com/patterns/linen.png');
+  scroll-behavior: smooth;
 }
 
 .hero {
+  padding: 60px 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 10%;
-  flex-wrap: wrap;
-  animation: fadeUp 1.2s ease forwards;
 }
 
 .hero-content {
@@ -42,14 +41,13 @@ body {
 .tagline {
   font-size: 1.2em;
   color: #6b6b6b;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 .about-text {
-  font-size: 0.95em;
-  color: #444;
-  margin-bottom: 20px;
-  line-height: 1.6em;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
 }
 
 .hero-image {
@@ -60,16 +58,17 @@ body {
 .hero-image img {
   width: 100%;
   max-width: 450px;
-  border-radius: 10px;
+  border-radius: 12px;
+  animation: fadeIn 2s ease-out;
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   color: white;
@@ -80,8 +79,8 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 10px rgba(212,90,42,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(212,90,42,0.3);
 }
 
 .btn.outline {
@@ -96,73 +95,80 @@ body {
 }
 
 main {
-  padding: 20px 10%;
+  padding: 40px 10%;
 }
 
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .card h2 {
   color: #d45a2a;
+  margin-bottom: 15px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
   text-align: center;
 }
 
-.grid img {
+.item img {
   width: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid img:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+.item:hover img {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.contact {
+  text-align: center;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   background-color: #f1efed;
   font-size: 0.9em;
   color: #6b6b6b;
 }
 
-.footer-note {
-  font-size: 0.8em;
-  color: #aaa;
-}
-
-@keyframes fadeUp {
-  from {
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
     text-align: center;
   }
+
   .hero-text {
     padding-right: 0;
   }
+
   .hero-image {
     margin-top: 20px;
   }
 }
-
