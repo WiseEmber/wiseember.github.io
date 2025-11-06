@@ -192,4 +192,12 @@ a {
   .hero-tagline {
     font-size: 1.1rem;
   }
+  /* Larger logo */
+.large-logo {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
 }
+
+}
+
