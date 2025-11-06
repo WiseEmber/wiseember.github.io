@@ -16,6 +16,11 @@ h2, h3 {
 a {
   color: #d85a1a;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 /* ---------- HEADER ---------- */
@@ -29,6 +34,13 @@ a {
   height: auto;
   display: block;
   margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.large-logo {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
 }
 
 .under-construction {
@@ -48,7 +60,7 @@ a {
 
 .hero-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   border-radius: 20px;
   display: block;
   margin: 0 auto 1.5rem;
@@ -67,6 +79,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .btn-primary, .btn-secondary {
@@ -108,6 +121,7 @@ a {
   color: #333;
   line-height: 1.7;
   animation: fadeInUp 1.5s ease both;
+  padding: 0 1rem;
 }
 
 /* ---------- PRODUCT SECTIONS ---------- */
@@ -124,6 +138,7 @@ a {
 .merch h3, .books h3 {
   color: #d85a1a;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .product-grid {
@@ -131,13 +146,14 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   justify-items: center;
+  padding: 0 1rem;
 }
 
 .product-card {
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .product-card:hover {
@@ -156,6 +172,7 @@ a {
 .product-card p {
   margin: 0.75rem 0;
   font-weight: 500;
+  color: #333;
 }
 
 /* ---------- CONTACT ---------- */
@@ -163,6 +180,11 @@ a {
   margin: 2rem auto;
   padding: 1rem;
   max-width: 800px;
+}
+
+.contact a {
+  color: #d85a1a;
+  font-weight: 600;
 }
 
 /* ---------- FOOTER ---------- */
@@ -192,12 +214,7 @@ a {
   .hero-tagline {
     font-size: 1.1rem;
   }
-  /* Larger logo */
-.large-logo {
-  width: 450px;
-  max-width: 90%;
-  height: auto;
+  .hero-image {
+    max-width: 100%;
+  }
 }
-
-}
-
